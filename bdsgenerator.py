@@ -12,6 +12,8 @@
 
 import random
 
+def weatherset(): # Generates weather data for 52 weeks 
+
 def generate(biasRatio): # Generates data with specified biasRatio
 
     dataset = [0] * 0
@@ -28,7 +30,7 @@ def generate(biasRatio): # Generates data with specified biasRatio
 
     random.shuffle(dataset)
 
-    return dataset
+    print dataset
 
 # Test for randomly generated datasets with specific bias
 def test():
@@ -41,3 +43,5 @@ def test():
         testScraper -= 1
 
     print "%d tests passed out of %d" % (passed, tests)
+
+generate(4)
